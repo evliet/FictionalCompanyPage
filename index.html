@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">EV<span>GAMING</span></a>
+             
+            <img id="mobile-cta" class="mobile-menu" src="Images/iconmonstr-menu-1.svg" alt="Open Nav">
+            
+            <nav>
+               <img id="mobile-exit" class="mobile-menu-exit" src="images/iconmonstr-x-mark-1.svg" alt="Exit Menu"> 
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="#about">About</a></li>
+                
+                    <li><a href="#services">Services</a></li>
+
+                    <li><a href="#careers">Careers</a></li>
+             
+                    <li class="contact-cta"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">We create digital solutions for real-money gaming operators</p>
+                <h1>DELIVER AN AMAZING PLAYER EXPERIENCE</h1>
+
+                <div class="hero-cta">
+                    <a href="#contact" class="career-cta">GET IN TOUCH</a>
+                    <a href="#careers" class="career-cta">CAREERS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <h2>ABOUT US</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Assumenda soluta excepturi maiores facilis nulla porro optio animi rerum numquam aperiam. 
+                    Illum, modi nam ut eos animi facere vero expedita nihil. Lorem ipsum dolor sit. 
+                    </p>
+                    <a href="#" class="primary-cta ">LEARN MORE</a>
+            </ul>
+            
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <div class="container">
+            <ul>
+                <h2>OUR SERVICES</h2>
+                <h2 style="font-size: 1.5em;">We develop modern and world-class experiences that players love</h2>
+                <li> 
+                    <h3>Responsive Websites</h3>
+                    <img src="/images/1427499348.svg" alt="responsive">
+                    
+                    <blockquote>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit facere minus est cupiditate asperiores, sit aliquid maiores perferendis quia fuga laudantium nam cum error quibusdam exercitationem tempore aperiam et magni."</blockquote>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h3>Native Mobile Apps</h3>
+                    <img src="/images/Mobile-Icon-White-on-Black.svg" alt="mobile">
+
+                    <blockquote>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit facere minus est cupiditate asperiores, sit aliquid maiores perferendis quia fuga laudantium nam cum error quibusdam exercitationem tempore aperiam et magni."</blockquote>
+                </li>
+            </ul>    
+
+            <ul>
+                <li>
+                    <h3>Backend Software</h3>
+                    <img src="/images/software.svg" alt="backendsoftware">
+
+                    <blockquote>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit facere minus est cupiditate asperiores, sit aliquid maiores perferendis quia fuga laudantium nam cum error quibusdam exercitationem tempore aperiam et magni."</blockquote>
+                </li>
+            </ul>  
+            
+            <ul>
+                <li>
+                    <h3>Games</h3>
+                    <img src="/images/mono-package-games-cards.svg" alt="games">
+
+                    <blockquote>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit facere minus est cupiditate asperiores, sit aliquid maiores perferendis quia fuga laudantium nam cum error quibusdam exercitationem tempore aperiam et magni."</blockquote>
+                </li>
+            </ul>
+            <a href="#" class="projects-cta">View All</a>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <h2>GAMING SOLUTIONS</h2>
+                <p>We create unparalledled gaming solutions to support
+                    both retail and digital channels
+                </p>
+                <img src="/images/solve-2636254_1920.jpg" class="features-image" alt="gamingsolutions">
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>CONTACT US:</h2>
+
+                <form action="">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email">
+
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Leave a comment"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send Message">
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section class="features-section">
+            <div class="container">
+                <ul class="features-list">
+                    <h2>EVGAMING</h2>
+                    <li>2021 EVgaming inc.</li>
+                    <li>All Rights Reserved</li>
+                    <li>Contact@qwe123.com</li>
+                    <li>111 N. Main Street</li>
+                    <li>USA, MI 12345</li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+    </script>
+</body>
+</html>
